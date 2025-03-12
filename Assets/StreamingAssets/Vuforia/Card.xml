@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
-    <ImageTarget name="yugi" size="1.000000 1.456818" />
+    <ImageTarget name="yugi" size="0.080000 0.116545" />
   </Tracking>
 </QCARConfig>
