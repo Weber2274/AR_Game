@@ -1,25 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class corn : MonoBehaviour
 {
-    public Animator animator; 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public static int scores = 0;
+    public Text scoreText;
+    
+    
     
     void OnMouseDown()
     {
-        animator.SetBool("die", true);
+        if(CompareTag("corn")){
+            scores += 10;
+        }else if(CompareTag("bomb")){
+            scores -= 20;
+        }
+
+        if(scores < 0){
+            scores = 0;
+        }
+        scoreText.text = "Score: " + scores;
         Destroy(gameObject);
     }
 }
