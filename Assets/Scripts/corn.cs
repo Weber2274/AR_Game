@@ -12,14 +12,20 @@ public class corn : MonoBehaviour
     
     void OnMouseDown()
     {
-        if(CompareTag("corn")){
-            scores += 10;
-        }else if(CompareTag("bomb")){
-            scores -= 20;
-        }
+        if(!timer.isGameOver)
+        {
+            if(CompareTag("corn"))
+            {
+                scores += 10;
+            }else if(CompareTag("bomb"))
+            {
+                scores -= 20;
+            }
 
-        if(scores < 0){
-            scores = 0;
+            if(scores < 0){
+                scores = 0;
+            }
+            
         }
         scoreText.text = "Score: " + scores;
         Destroy(gameObject);

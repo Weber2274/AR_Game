@@ -10,7 +10,8 @@ public class timer : MonoBehaviour
     public Text gameOverText;
     public Button restartButton;
     public Button startButton;
-    public float gameTime = 30f;
+    public static float gameTime = 30f;
+    public static bool isGameOver = false;
     
     void Start()
     {
@@ -40,6 +41,7 @@ public class timer : MonoBehaviour
     }
     void GameOver()
     {
+        isGameOver = true;
         gameOverText.gameObject.SetActive(true);
         gameOverText.text = corn.scores.ToString() + "分";
         Time.timeScale = 0f;
@@ -47,6 +49,7 @@ public class timer : MonoBehaviour
 
     public void RestartGame()
     {
+        isGameOver = false; 
         gameTime = 30f;
         times.text = "Time: 30";
         Time.timeScale = 1f;
