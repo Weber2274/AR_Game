@@ -252,7 +252,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Time: 30'
+  m_Text: 'Time: 20'
 --- !u!222 &79312143
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -292,6 +292,22 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 813037983}
+    - target: {fileID: 6327527685736291705, guid: dc348948357925c4281ea010e2bd76d3, type: 3}
+      propertyPath: m_Height
+      value: 0.33770546
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327527685736291705, guid: dc348948357925c4281ea010e2bd76d3, type: 3}
+      propertyPath: m_Radius
+      value: 0.10495454
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327527685736291705, guid: dc348948357925c4281ea010e2bd76d3, type: 3}
+      propertyPath: m_Center.x
+      value: 0.0017933547
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327527685736291705, guid: dc348948357925c4281ea010e2bd76d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.15514426
+      objectReference: {fileID: 0}
     - target: {fileID: 8140312375259024457, guid: dc348948357925c4281ea010e2bd76d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.156
@@ -721,9 +737,7 @@ MonoBehaviour:
   - {fileID: 1024261706}
   imageTarget: {fileID: 659926932}
   times: 0
-  maxTime: 2
   boomTime: 0
-  boomMaxTime: 3
 --- !u!114 &659926934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1040,7 +1054,6 @@ MonoBehaviour:
   gameOverText: {fileID: 42582105}
   restartButton: {fileID: 464019491}
   startButton: {fileID: 1144868069}
-  gameTime: 30
 --- !u!1 &1024261706 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8147686169754160727, guid: 85bbb520a78a9014d934fdc11043a7e6, type: 3}
